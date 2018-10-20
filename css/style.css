@@ -904,15 +904,15 @@ ul.social-buttons li a:active {
 
 .navbar-default {
 	font-family: "Montserrat",sans-serif;
-	font-size: 12px;
+	font-size: 17px;
 	background: rgb(47, 47, 47) none repeat scroll 0% 0%;
 	text-transform: uppercase;
 }
 
 .navbar-default .navbar-nav > li > a {
 	color: #FFFFFF;
-	line-height: 3;
-    font-weight: 400;
+	line-height: 2.3;
+    font-weight: 300;
 }
 
 .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
@@ -930,7 +930,7 @@ ul.social-buttons li a:active {
 }
 
 .navbar-right {
-    margin-right: 330px;
+    margin-right: 250px;
 }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
@@ -1129,7 +1129,7 @@ ul.social-buttons li a:active {
 #our-process-title h4 {
 	font-family: 'Montserrat', sans-serif;
 	color: #fff;
-	font-size: 12px;
+	font-size: 30px;
 	font-weight: 700;
 	text-transform: uppercase;
 	letter-spacing: 2px;
