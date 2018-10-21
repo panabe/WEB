@@ -31,7 +31,7 @@ function submitForm() {
     var msg_subject = $("#msg_subject").val();
     var message = $("#message").val();
     $.ajax({
-        type: "POST",
+        type: "GET",
         url: "//official@newera.icu",
         data: "name=" + name + "&email=" + email + "&msg_subject=" +
             msg_subject + "&message=" + message,
