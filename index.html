@@ -632,67 +632,55 @@ Project mobile and web applications</p>
 				</div><!-- /.column -->
 			</div><!-- /.row -->
 			<!-- /.column -->
-				<div class="col-sm-6 col-lg-7 mt30-xs">
-					<form data-toggle="validator" id="contactForm" name="contactForm">
-						<div class="row">
-							<div class="col-sm-6">
-								<div class="form-group">
-									<div class="controls">
-										<input class="form-control" data-error="This section is required."
-										id="msg_subject" placeholder="Subject *" required="" type="text">
-										<div class="help-block with-errors"></div>
-									</div>
-								</div>
-							</div><!-- /.column -->
-							<div class="col-sm-6">
-								<div class="form-group">
-									<div class="controls">
-										<input class="form-control" id="phone" placeholder="Phone" type="text">
-									</div>
-								</div>
-							</div><!-- /.column -->
-						</div><!-- /.row -->
-						<div class="row mb10">
-							<div class="col-sm-6">
-								<div class="form-group">
-									<div class="controls">
-										<input class="form-control" data-error="This section is required." id="name" placeholder="Your Name *" required="" type="text">
-										<div class="help-block with-errors"></div>
-									</div>
-								</div>
-							</div><!-- /.column -->
-							<div class="col-sm-6">
-								<div class="form-group">
-									<div class="controls">
-										<input class="email form-control" data-error="This section is required." id="email" placeholder="Email *" required="" type="email">
-										<div class="help-block with-errors"></div>
-									</div>
-								</div>
-							</div><!-- /.column -->
-						</div><!-- /.row -->
-						<div class="row">
-							<div class="col-sm-12">
-								<div class="form-group">
-									<div class="controls">
-										<textarea class="form-control" data-error="This section is required." id="message" placeholder="Message *" required="" rows="5"></textarea>
-										<div class="help-block with-errors"></div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="row mt15">
-							<div class="col-sm-6">
-								<div id="msgSubmit" class="h4 hidden mt10 no-margin-bottom"></div> 
-							</div><!-- /.column -->
-							<div class="col-sm-6 text-right">
-								<button type="submit" id="submit" class="btn btn-default btn-lg">Send</button>
-							</div><!-- /.column -->
-						</div><!-- /.row -->
-					</form><!-- /.form -->
-				</div><!-- /.column -->
-			</div><!-- /.row -->
-		</div><!-- /.container -->
-	</section><!-- /.section -->
+				<div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-12 pr-0 res_md_pr_15">
+            	<div class="col-lg-6 col-md-12 col-sm-12 res_md_mb_40">
+                <div class="title_default_light title_border text-center">
+                    <h4 class="animation" data-animation="fadeInUp" data-animation-delay="0.2s">Twitter Feeds</h4>
+                </div>
+                <div class="lg_pt_20 res_sm_pt_0 text-center animation" data-animation="fadeInRight" data-animation-delay="0.2s"> 
+                  
+				  <a class="twitter-timeline" data-width="500" data-height="300" href="https://twitter.com/NWR_NEWERA">Tweets by NEWERAteam</a> <script async src="../platform.twitter.com/widgets.js" charset="utf-8"></script>
+				  
+				  
+				  
+				  
+                </div>
+              	</div>
+            </div>
+            <div class="col-lg-6 col-md-12 pl-0 res_md_pl_15">
+            	<div class="bg_light_dark contact_box animation" data-animation="fadeInRight" data-animation-delay="0.1s">
+                    <div class="title_default_light title_border">
+                        <h4 class="animation" data-animation="fadeInUp" data-animation-delay="0.2s">Leave a Message</h4>
+                    </div>
+                    <form method="post" name="enq" class="form_field">
+                    <div class="row">
+                      <div class="form-group col-md-12 animation" data-animation="fadeInUp" data-animation-delay="0.4s">
+                        <input type="text" required="required" placeholder="Enter Name *" id="first-name" class="form-control" name="name">
+                      </div>
+                      <div class="form-group col-md-12 animation" data-animation="fadeInUp" data-animation-delay="0.6s">
+                        <input type="email" required="required" placeholder="Enter Email *" id="email" class="form-control" name="email">
+                      </div>
+                      <div class="form-group col-md-12 animation" data-animation="fadeInUp" data-animation-delay="0.8s">
+                        <input type="text" required="required" placeholder="Enter Subject" id="subject" class="form-control" name="subject">
+                      </div>
+                      <div class="form-group col-md-12 animation" data-animation="fadeInUp" data-animation-delay="1s">
+                        <textarea required="required" placeholder="Message *" id="description" class="form-control" name="message" rows="2"></textarea>
+                      </div>
+                      <div class="col-md-12 text-center animation" data-animation="fadeInUp" data-animation-delay="1.2s">
+                        <button type="submit" title="Submit Your Message!" class="btn btn-default btn-radius" id="submitButton" name="submit" value="Submit">Submit <i class="ion-ios-arrow-thin-right"></i></button>
+                      </div>
+                      <div class="col-md-12">
+                        <div id="alert-msg" class="alert-msg text-center"></div>
+                      </div>
+                    </div>
+                    </form>
+                </div>
+        	</div>
+        </div>
+	</div>
+</section>
 	<!-- End Contact -->
 
 	<!-- Begin Footer -->
