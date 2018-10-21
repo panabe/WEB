@@ -31,8 +31,8 @@ function submitForm() {
     var msg_subject = $("#msg_subject").val();
     var message = $("#message").val();
     $.ajax({
-        type: "post",
-        url: "//official@newera.icu",
+        type: "POST",
+        url: "php/contact.php",
         data: "name=" + name + "&email=" + email + "&msg_subject=" +
             msg_subject + "&message=" + message,
         success: function(text) {
@@ -44,11 +44,11 @@ function submitForm() {
             }
         }
     });
-    function formSuccess() {
+}
+function formSuccess() {
     $("#contactForm")[0].reset();
     submitMSG(true, "Message Submitted!")
 }
-
 function formError() {
     $("#contactForm").removeClass().addClass('shake animated').one(
         'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
@@ -56,7 +56,6 @@ function formError() {
             $(this).removeClass();
         });
 }
-
 function submitMSG(valid, msg) {
     if (valid) {
         var msgClasses = "h4 text-success";
