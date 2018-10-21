@@ -32,6 +32,7 @@ function submitForm() {
     var message = $("#message").val();
     $.ajax({
         type: "POST",
+        datatype: "json",
         url: "php/contact.php",
         data: "name=" + name + "&email=" + email + "&msg_subject=" +
             msg_subject + "&message=" + message,
