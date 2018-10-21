@@ -32,7 +32,7 @@ function submitForm() {
     var message = $("#message").val();
     $.ajax({
         type: "post",
-        url:"//official@newera.icu",
+        url: "//official@newera.icu",
         data: "name=" + name + "&email=" + email + "&msg_subject=" +
             msg_subject + "&message=" + message,
         success: function(text) {
