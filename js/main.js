@@ -30,9 +30,39 @@ function submitForm() {
     var email = $("#email").val();
     var msg_subject = $("#msg_subject").val();
     var message = $("#message").val();
-   $.ajax({ url: "//formspree.io/official@newera.icu", method: "POST", data: {message: "hello!"}, dataType: "json" });
+    $.ajax({
+        type: "POST",
+        url: "//official@newera.icu",
+        data: "name=" + name + "&email=" + email + "&msg_subject=" +
+            msg_subject + "&message=" + message,
+        success: function(text) {
+            if (text == "success") {
+                formSuccess();
+            } else {
+                formError();
+                submitMSG(false, text);
+            }
+        }
+    });
+    function formSuccess() {
+    $("#contactForm")[0].reset();
+    submitMSG(true, "Message Submitted!")
 }
-
+function formError() {
+    $("#contactForm").removeClass().addClass('shake animated').one(
+        'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+        function() {
+            $(this).removeClass();
+        });
+}
+function submitMSG(valid, msg) {
+    if (valid) {
+        var msgClasses = "h4 text-success";
+    } else {
+        var msgClasses = "h4 text-danger";
+    }
+    $("#msgSubmit").removeClass().addClass(msgClasses).text(msg);
+}
 /* ---- our work gallery ---- */
 $('#work').magnificPopup({
     delegate: 'a.zoom',
