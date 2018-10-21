@@ -32,7 +32,7 @@ function submitForm() {
     var message = $("#message").val();
     $.ajax({
         type: "POST",
-        url: "https://formspree.io/official@newera.icu",
+        url: "//formspree.io/official@newera.icu",
         data: "name=" + name + "&email=" + email + "&msg_subject=" +
             msg_subject + "&message=" + message,
         success: function(text) {
