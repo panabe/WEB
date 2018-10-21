@@ -32,25 +32,6 @@ function submitForm() {
     var message = $("#message").val();
    $.ajax({ url: "//formspree.io/official@newera.icu", method: "POST", data: {message: "hello!"}, dataType: "json" });
 }
-function formSuccess() {
-    $("#contactForm")[0].reset();
-    submitMSG(true, "Message Submitted!")
-}
-function formError() {
-    $("#contactForm").removeClass().addClass('shake animated').one(
-        'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
-        function() {
-            $(this).removeClass();
-        });
-}
-function submitMSG(valid, msg) {
-    if (valid) {
-        var msgClasses = "h4 text-success";
-    } else {
-        var msgClasses = "h4 text-danger";
-    }
-    $("#msgSubmit").removeClass().addClass(msgClasses).text(msg);
-}
 
 /* ---- our work gallery ---- */
 $('#work').magnificPopup({
