@@ -48,6 +48,7 @@ function submitForm() {
     $("#contactForm")[0].reset();
     submitMSG(true, "Message Submitted!")
 }
+
 function formError() {
     $("#contactForm").removeClass().addClass('shake animated').one(
         'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
@@ -55,6 +56,7 @@ function formError() {
             $(this).removeClass();
         });
 }
+
 function submitMSG(valid, msg) {
     if (valid) {
         var msgClasses = "h4 text-success";
@@ -63,6 +65,7 @@ function submitMSG(valid, msg) {
     }
     $("#msgSubmit").removeClass().addClass(msgClasses).text(msg);
 }
+
 /* ---- our work gallery ---- */
 $('#work').magnificPopup({
     delegate: 'a.zoom',
